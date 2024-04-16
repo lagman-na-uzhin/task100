@@ -1,0 +1,16 @@
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <h2>Connexion</h2>
+
+    <!-- Login Form -->
+    <form class="container">
+      <input type="email" class="fadeIn second" id="login" required [(ngModel)]="email" name="name" placeholder="Adresse e-mail">
+      <input type="password" class="fadeIn third" id="password" required [(ngModel)]="password" name="name" placeholder="Mot de passe">
+      <a (click)="goToResetComponent()" class="text-right fadeIn third">Mot de passe oublié ? </a>
+      <button (click)="submit()" class="fadeIn fourth btn btn-info btn-block my-3">Connexion</button>
+    </form>
+    <small class="alert alert-danger" *ngIf="error" role="alert">
+      L'adresse e-mail ou le mot de passe est incorrect !
+    </small>
+  </div>
+</div>

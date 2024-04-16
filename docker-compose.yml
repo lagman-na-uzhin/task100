@@ -1,0 +1,20 @@
+version: '3'
+services:
+  api:
+    build: ./back
+    ports:
+      - "8181:8181"
+    networks:
+      - app-network
+
+  angular_client:
+    build: ./front
+    ports:
+      - "80:80" 
+    networks:
+      - app-network 
+
+networks:
+  app-network:
+    driver: bridge
+

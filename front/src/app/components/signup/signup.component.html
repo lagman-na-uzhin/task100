@@ -1,0 +1,21 @@
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <h2>Inscription</h2>
+
+    <!-- Sign-in Form -->
+    <form class="container">
+      <input type="email" class="fadeIn second" required [(ngModel)]="email" name="email" placeholder="Adresse e-mail">
+      <input type="text" class="fadeIn third" required [(ngModel)]="lastName" name="lastName" placeholder="Nom">
+      <input type="text" class="fadeIn second" required [(ngModel)]="firstName"  name="firstName" placeholder="Prénom">
+      <input type="password" class="fadeIn third" required [(ngModel)]="password" name="password" placeholder="Mot de passe">
+      <button (click)="submit()" class="fadeIn fourth btn btn-info btn-block my-3" type="button">Inscription</button>
+    </form>
+    <small class="alert alert-danger" *ngIf="error" role="alert">
+      Un des champs est vide ou incorrect !
+    </small>
+    <div id="formFooter">
+      <p>Gagnez en productivité avec l'application Todo List App. Recensez, gérez et modifiez vos tâches à tout moment,
+        où que vous soyez. Vos listes de tâches sont synchronisées sur tous vos appareils !</p>
+    </div>
+  </div>
+</div>

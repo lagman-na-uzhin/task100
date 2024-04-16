@@ -1,0 +1,11 @@
+@import "~@danielmoncada/angular-datetime-picker/assets/style/picker.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.my {
+  margin-top: 7em;
+  margin-bottom: 7em;
+}
